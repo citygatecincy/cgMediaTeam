@@ -11,7 +11,6 @@ nav{
   padding-left: 50px;
   border-bottom: solid 2px #d3d3d3;
 }
-
 footer{
   margin-top: 70px;
   background: #d3d3d3;
@@ -19,7 +18,7 @@ footer{
   text-align: center;
 }
 
-a{ text-decoration: none; }
+a{ text-decoration: none; color: #000}
 
 h3{font-weight: 500;}
 h4{
@@ -83,6 +82,12 @@ h4{
   background-size: 100%;
 }
 
+
+.bg2{
+  background: url("../images/stage.jpeg");
+  background-size: 100%;
+}
+
 .hero a{
   text-decoration: none;
 }
@@ -101,7 +106,7 @@ h4{
 .main{ text-align: center; }
 .main > h1{
   margin-top: 80px;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
   color: rgb(72, 70, 197);
   font-weight: 500;
   text-transform: uppercase;
@@ -152,6 +157,31 @@ h4{
   
 }
 
+.secBtn{
+  display: block;
+  width: 9%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  text-align: center;
+  background:#000;
+  color: #fff;
+  letter-spacing: 3px;
+  transition: all .5s ease;
+}
+
+.secBtn:hover{
+  background: #d3d3d3;
+  transition: all .5s ease;
+
+}
+
+
+
 /* CSS For Learning Pages */
 .backBtn{
   padding-top: 10px;
@@ -174,8 +204,16 @@ h4{
   font-weight: 400; 
 }
 
-.videoEmbed{
-  width: 100%;
+.videoEmbed{ width: 100%; }
+
+.lessonReading > p{
+  width: 50%;
+  text-align: justify;
+}
+
+.lessonReading > ol{
+  width: 50%;
+  text-align: justify;
 }
 
 .next{
@@ -188,4 +226,31 @@ h4{
   padding-right: 350px;
   font-weight: 500;
   line-height: 1.5em;
+}
+
+.m-nav{ display: none; }
+
+.learnTitle{
+  margin-top: 50px;
+}
+
+/* Media Querys */
+
+@media only screen and (max-width: 425px) {
+  nav{ padding: 30px; }
+
+  .icon > img{
+    max-width: 12%;
+    margin-left: 0;
+  }
+
+  .icon > h2{
+    font-size: .5em;
+    letter-spacing: 1.5px;
+    margin-left: 10px;
+  }
+
+  .m-nav{ display: inline-block; }
+  .navItems{ display: none; }
+  
 }
